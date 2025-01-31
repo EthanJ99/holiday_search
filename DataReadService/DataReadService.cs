@@ -1,16 +1,22 @@
 ﻿using System.Text.Json;
 namespace DataReadService;
 
-public class ReadFlightData : IReadData<FlightList>
+public class ReadFlightData : IReadData<Flight>
 {
-    public FlightList readJson(string filepath) {
-        return JsonSerializer.Deserialize<FlightList>(filepath);
+    public static List<Flight> ReadData(string filepath) {
+        StreamReader file = new StreamReader(filepath);
+        string json = file.ReadToEnd();
+        file.Close();
+        return JsonSerializer.Deserialize<List<Flight>>(json);
     }
 }
 
-public class ReadHotelData : IReadData<HotelList>
+public class ReadHotelData : IReadData<Hotel>
 {
-    public HotelList readJson(string filepath) {
-        return JsonSerializer.Deserialize<HotelList>(filepath);
+    public static List<Hotel> ReadData(string filepath) {
+        StreamReader file = new StreamReader(filepath);
+        string json = file.ReadToEnd();
+        file.Close();
+        return JsonSerializer.Deserialize<List<Hotel>>(json);
     }
 }

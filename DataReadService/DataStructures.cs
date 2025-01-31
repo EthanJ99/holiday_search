@@ -2,16 +2,6 @@ using System;
 
 namespace DataReadService;
 
-public class FlightList
-{
-    public List<Flight> flight_data { get; set; }
-}
-
-public class HotelList
-{
-    public List<Hotel> hotel_data { get; set; }
-}
-
 public class Flight
 {
     public int id { get; set; }
