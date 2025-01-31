@@ -1,0 +1,18 @@
+[
+    {
+        "airline": "First Class Air",
+        "departure_date": "2023-07-01",
+        "from": "MAN",
+        "id": 1,
+        "price": 470,
+        "to": "TFS"
+    },
+    {
+        "airline": "Oceanic Airlines",
+        "departure_date": "2023-07-01",
+        "from": "MAN",
+        "id": 2,
+        "price": 245,
+        "to": "AGP"
+    }
+]

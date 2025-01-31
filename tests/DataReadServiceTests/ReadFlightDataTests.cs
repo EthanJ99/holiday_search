@@ -1,28 +1,54 @@
 using System;
+using System.Text.Json;
+using DataReadService;
+
+namespace DataReadServiceTests;
 
 public class ReadFlightDataTests
 {
     [Fact]
-    public void readJson_ValidJsonFileSingleEntry_ReadsDataSuccessfully()
+    public void ReadJson_ValidJsonFileSingleEntry_ReadsDataSuccessfully()
     {
-        Assert.True(false);
+        List<Flight> result = ReadFlightData.ReadData("../../../test_data/flights_single_entry.json");
+        
+        Assert.True(result.Count == 1);
+        Assert.True(result[0].airline == "First Class Air");
+        Assert.True(result[0].departure_date == "2023-07-01");
+        Assert.True(result[0].from == "MAN");
+        Assert.True(result[0].id ==  1);
+        Assert.True(result[0].price ==  470);
+        Assert.True(result[0].to == "TFS");
+        
     }
 
     [Fact]
-    public void readJson_ValidJsonFileMultipleEntries_ReadsDataSuccessfully()
+    public void ReadJson_ValidJsonFileMultipleEntries_ReadsDataSuccessfully()
     {
-        Assert.True(false);
+        List<Flight> result = ReadFlightData.ReadData("../../../test_data/flights_multiple_entries.json");
+        Assert.True(result.Count == 2);
+        Assert.True(result[0].airline == "First Class Air");
+        Assert.True(result[0].departure_date == "2023-07-01");
+        Assert.True(result[0].from == "MAN");
+        Assert.True(result[0].id ==  1);
+        Assert.True(result[0].price ==  470);
+        Assert.True(result[0].to == "TFS");
+        Assert.True(result[1].airline == "Oceanic Airlines");
+        Assert.True(result[1].departure_date == "2023-07-01");
+        Assert.True(result[1].from == "MAN");
+        Assert.True(result[1].id ==  2);
+        Assert.True(result[1].price ==  245);
+        Assert.True(result[1].to == "AGP");
     }
 
     [Fact]
-    public void readJson_InvalidJsonFile_ThrowsException()
+    public void ReadJson_InvalidJsonFile_ThrowsException()
     {
-        Assert.True(false);
+        Assert.Throws<JsonException>(() => ReadFlightData.ReadData("../../../test_data/flights_invalid_data.json"));
     }
 
     [Fact]
-    public void readJson_FileNotFound_ThrowsException()
+    public void ReadJson_FileNotFound_ThrowsException()
     {
-        Assert.True(false);
+        Assert.Throws<FileNotFoundException>(() => ReadFlightData.ReadData("this_file_isnt_real.json"));
     }
 }

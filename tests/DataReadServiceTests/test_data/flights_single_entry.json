@@ -1,0 +1,10 @@
+[
+    {
+        "airline": "First Class Air",
+        "departure_date": "2023-07-01",
+        "from": "MAN",
+        "id": 1,
+        "price": 470,
+        "to": "TFS"
+    }
+]

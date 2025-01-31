@@ -1,0 +1,12 @@
+[
+    {
+        "arrival_date": "2022-11-05",
+        "id": 1,
+        "local_airports": [
+            "TFS"
+        ],
+        "name": "Iberostar Grand Portals Nous",
+        "nights": 7,
+        "price_per_night": 100
+    }
+]
