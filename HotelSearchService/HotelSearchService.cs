@@ -22,7 +22,14 @@ public class HotelSearchService
     public Hotel FindCheapestHotel(List<Hotel> hotels, int nights){
         /*
         Return the hotel with the cheapest price from a list of Hotel. Calculates based on customer's
-        intended duration of stay and the hotel price. */
-        return new Hotel{};
+        intended duration of stay and the hotel price.
+        Implementation note: if there are two items of the same price in the list,
+        this method will just return the first (based on their order in the list). A more sophisticated
+        search could allow user to choose between the different options
+        */
+        if (hotels.Count > 0) {
+            return hotels.OrderBy(x => x.price_per_night * nights).First();
+        }
+        throw new ArgumentException("Hotel data must not be empty.");
     }
 }
