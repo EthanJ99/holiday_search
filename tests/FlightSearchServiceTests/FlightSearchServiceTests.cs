@@ -49,6 +49,7 @@ public class FlightSearchServiceTests
         List<Flight> searched_list = flight_service.FlightSearch(to: "TFS", from: "MAN", date: "2023-07-01");
         Assert.Equal(expected: 2, actual: searched_list.Count());
         Assert.Equal(expected: flights[0].id, actual: searched_list[0].id);
+        Assert.Equal(expected: flights[3].id, actual: searched_list[1].id);
     }
 
     [Fact]

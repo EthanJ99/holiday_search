@@ -68,6 +68,8 @@ public class HotelSearchServiceTests
     [Fact]
     public void FindCheapestHotel_EmptyHotelData_ThrowsArgumentException()
     {
-        Assert.True(false);
+        List<Hotel> hotels = new List<Hotel> {};
+        var hotel_service = new HotelSearchService(hotels);
+        Assert.Throws<ArgumentException>(() => hotel_service.FindCheapestHotel(hotels: hotels, nights: 7));
     }
 }
