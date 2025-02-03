@@ -1,0 +1,30 @@
+﻿namespace HotelSearchService;
+using DataReadService;
+
+public class HotelSearchService
+{
+    List<Hotel> hotel_data;
+    int duration_of_stay; 
+    public HotelSearchService(List<Hotel> hotel_data, int duration_of_stay){
+        this.hotel_data = hotel_data;
+        this.duration_of_stay = duration_of_stay;
+    }
+    public List<Hotel> HotelSearch(string to, int nights, string date){
+        /*
+        Returns a list of Hotels meeting the input criteria.
+        Inputs:
+            - to: customer's intended travel destination (i.e. arrival airport)
+            - nights: number of nights customer intends to stay at the hotel
+            - date: date customer intends to leave on holiday
+        Output: List of hotel data (of type Hotel)
+        */
+        return new List<Hotel>{};
+    }
+
+    public Hotel FindCheapestHotel(List<Hotel> hotels){
+        /*
+        Return the hotel with the cheapest price from a list of Hotel. Calculates based on customer's
+        intended duration of stay and the hotel price. */
+        return new Hotel{};
+    }
+}
