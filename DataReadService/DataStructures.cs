@@ -10,6 +10,10 @@ public class Flight
     public string to { get; set; }
     public int price { get; set; }
     public string departure_date { get; set; }
+
+    public override string ToString(){
+        return "id: " + id + " airline: " + airline + " from: " + from + " to:" + to + " price:" + price + " departure_date:" + departure_date;
+    }  
 }
 
 public class Hotel
@@ -20,4 +24,13 @@ public class Hotel
     public int price_per_night { get; set; }
     public List<string> local_airports { get; set; }
     public int nights { get; set; }
+
+    public override string ToString(){
+        string output_str = "id: " + id + " name: " + name + " arrival_date: " + arrival_date + " price_per_night" + price_per_night + " nights" + nights;
+        for (int i = 0; i < local_airports.Count; i++)
+        {
+            output_str = output_str + " " + i;
+        }
+        return output_str;
+    } 
 }
