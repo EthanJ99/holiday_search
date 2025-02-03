@@ -4,12 +4,10 @@ using DataReadService;
 public class HotelSearchService
 {
     List<Hotel> hotel_data;
-    int duration_of_stay; 
-    public HotelSearchService(List<Hotel> hotel_data, int duration_of_stay){
+    public HotelSearchService(List<Hotel> hotel_data){
         this.hotel_data = hotel_data;
-        this.duration_of_stay = duration_of_stay;
     }
-    public List<Hotel> HotelSearch(string to, int nights, string date){
+    public List<Hotel> HotelSearch(string to, string date){
         /*
         Returns a list of Hotels meeting the input criteria.
         Inputs:
@@ -18,10 +16,10 @@ public class HotelSearchService
             - date: date customer intends to leave on holiday
         Output: List of hotel data (of type Hotel)
         */
-        return new List<Hotel>{};
+        return [.. hotel_data.Where(x => x.local_airports.Contains(to) && x.arrival_date == date)];
     }
 
-    public Hotel FindCheapestHotel(List<Hotel> hotels){
+    public Hotel FindCheapestHotel(List<Hotel> hotels, int nights){
         /*
         Return the hotel with the cheapest price from a list of Hotel. Calculates based on customer's
         intended duration of stay and the hotel price. */
