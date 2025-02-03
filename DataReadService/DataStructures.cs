@@ -34,3 +34,9 @@ public class Hotel
         return output_str;
     } 
 }
+
+public class Holiday {
+    public float total_price;
+    public Hotel hotel;
+    public Flight flight;
+}
