@@ -2,8 +2,8 @@
 A program which searches a database of available flights and hotels and returns the best value holiday based on user parameters.
 
 ## Todo/Long term goals (no particular order)
-* [ ] Refactor FlightSearchService and HotelSearchService to work more according to SOLID principles. The parameters for each search should be stored per-object instead of passing in different values in each method (this would be okay if the methods were called statically, but they aren't!)
-* [ ] Add additional unit tests (e.g. check hotels with multiple values in the 'local_airports' work fine)
+* [x] Refactor FlightSearchService and HotelSearchService to work more according to SOLID principles. The parameters for each search should be stored per-object instead of passing in different values in each method (this would be okay if the methods were called statically, but they aren't!)
+* [x] Add additional unit tests (e.g. check hotels with multiple values in the 'local_airports' work fine)
 * [ ] Move shared test data into the 'tests' folder instead of seperately in each test repo
 * [ ] Make test project names more consistent (HolidaySearch.Tests vs. HotelSearchServiceTests)
 * [ ] Add an 'Any airport' search

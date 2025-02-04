@@ -7,7 +7,7 @@ using Xunit;
 public class FlightSearchServiceTests
 {
     [Fact]
-    public void FlightSearch_ValidFlightDataListWithNoMatch_ReturnsEmptyList()
+    public void Filter_ValidFlightDataListWithNoMatch_ReturnsEmptyList()
     {
         List<Flight> flights = new List<Flight> {
             new Flight { airline = "First Class Air", departure_date = "2023-07-01", from = "MAN", id = 1, price = 470, to = "TFS" },
@@ -24,7 +24,7 @@ public class FlightSearchServiceTests
     }
     
     [Fact]
-    public void FlightSearch_ValidFlightDataList_ReturnsListWithOneEntry()
+    public void Filter_ValidFlightDataList_ReturnsListWithOneEntry()
     {
         List<Flight> flights = new List<Flight> {
             new Flight { airline = "First Class Air", departure_date = "2023-07-01", from = "MAN", id = 1, price = 470, to = "TFS" },
@@ -42,7 +42,7 @@ public class FlightSearchServiceTests
     }
 
     [Fact]
-    public void FlightSearch_ValidFlightDataList_ReturnsListWithMultipleEntries()
+    public void Filter_ValidFlightDataList_ReturnsListWithMultipleEntries()
     {
         List<Flight> flights = new List<Flight> {
             new Flight { airline = "First Class Air", departure_date = "2023-07-01", from = "MAN", id = 1, price = 470, to = "TFS" },
