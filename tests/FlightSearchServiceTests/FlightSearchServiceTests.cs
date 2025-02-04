@@ -1,7 +1,6 @@
-﻿namespace FlightSearchServiceTests;
+﻿namespace FlightSearchService.Tests;
 
 using DataReadService;
-using FlightSearchService;
 using Xunit;
 
 public class FlightSearchServiceTests

@@ -11,15 +11,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HolidaySearchService.Tests"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataReadService", "DataReadService\DataReadService.csproj", "{3ED26FA8-4DB2-4267-B785-EA7F8D24C94A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataReadServiceTests", "tests\DataReadServiceTests\DataReadServiceTests.csproj", "{F89B82AF-B020-4795-B3E7-D5BD5E2852F9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataReadService.Tests", "tests\DataReadServiceTests\DataReadService.Tests.csproj", "{F89B82AF-B020-4795-B3E7-D5BD5E2852F9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightSearchService", "FlightSearchService\FlightSearchService.csproj", "{43F284E1-0817-4811-A58D-4B9204C95775}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightSearchServiceTests", "tests\FlightSearchServiceTests\FlightSearchServiceTests.csproj", "{669AF9EF-1B51-420C-B0FF-4101EFDB150A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightSearchService.Tests", "tests\FlightSearchServiceTests\FlightSearchService.Tests.csproj", "{669AF9EF-1B51-420C-B0FF-4101EFDB150A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelSearchService", "HotelSearchService\HotelSearchService.csproj", "{5CDBFEDC-FAA3-4340-829D-FD55AB91BE4A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelSearchServiceTests", "tests\HotelSearchServiceTests\HotelSearchServiceTests.csproj", "{2486234E-5C81-4A16-881B-3D2DE5FB0281}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelSearchService.Tests", "tests\HotelSearchServiceTests\HotelSearchService.Tests.csproj", "{2486234E-5C81-4A16-881B-3D2DE5FB0281}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

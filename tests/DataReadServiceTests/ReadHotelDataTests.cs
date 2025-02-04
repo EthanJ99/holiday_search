@@ -1,8 +1,6 @@
-using System;
 using System.Text.Json;
-using DataReadService;
 
-namespace DataReadServiceTests;
+namespace DataReadService.Tests;
 
 public class ReadHotelDataTests
 {

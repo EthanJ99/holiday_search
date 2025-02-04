@@ -1,7 +1,5 @@
-﻿namespace HotelSearchServiceTests;
-using HotelSearchService;
+﻿namespace HotelSearchService.Tests;
 using DataReadService;
-using System.Globalization;
 
 public class HotelSearchServiceTests
 {
