@@ -1,0 +1,132 @@
+[
+    {
+        "arrival_date": "2022-11-05",
+        "id": 1,
+        "local_airports": [
+            "TFS"
+        ],
+        "name": "Iberostar Grand Portals Nous",
+        "nights": 7,
+        "price_per_night": 100
+    },
+    {
+        "arrival_date": "2022-11-05",
+        "id": 2,
+        "local_airports": [
+            "TFS"
+        ],
+        "name": "Laguna Park 2",
+        "nights": 7,
+        "price_per_night": 50
+    },
+    {
+        "arrival_date": "2023-06-15",
+        "id": 3,
+        "local_airports": [
+            "PMI"
+        ],
+        "name": "Sol Katmandu Park & Resort",
+        "nights": 14,
+        "price_per_night": 59
+    },
+    {
+        "arrival_date": "2023-06-15",
+        "id": 4,
+        "local_airports": [
+            "PMI"
+        ],
+        "name": "Sol Katmandu Park & Resort",
+        "nights": 14,
+        "price_per_night": 59
+    },
+    {
+        "arrival_date": "2023-06-15",
+        "id": 5,
+        "local_airports": [
+            "PMI"
+        ],
+        "name": "Sol Katmandu Park & Resort",
+        "nights": 10,
+        "price_per_night": 60
+    },
+    {
+        "arrival_date": "2022-11-10",
+        "id": 6,
+        "local_airports": [
+            "LPA"
+        ],
+        "name": "Club Maspalomas Suites and Spa",
+        "nights": 14,
+        "price_per_night": 75
+    },
+    {
+        "arrival_date": "2022-09-10",
+        "id": 7,
+        "local_airports": [
+            "LPA"
+        ],
+        "name": "Club Maspalomas Suites and Spa",
+        "nights": 14,
+        "price_per_night": 76
+    },
+    {
+        "arrival_date": "2022-10-10",
+        "id": 8,
+        "local_airports": [
+            "LPA"
+        ],
+        "name": "Boutique Hotel Cordial La Peregrina",
+        "nights": 7,
+        "price_per_night": 45
+    },
+    {
+        "arrival_date": "2023-07-01",
+        "id": 9,
+        "local_airports": [
+            "AGP"
+        ],
+        "name": "Nh Malaga",
+        "nights": 7,
+        "price_per_night": 83
+    },
+    {
+        "arrival_date": "2023-07-05",
+        "id": 10,
+        "local_airports": [
+            "AGP"
+        ],
+        "name": "Barcelo Malaga",
+        "nights": 10,
+        "price_per_night": 45
+    },
+    {
+        "arrival_date": "2023-10-16",
+        "id": 11,
+        "local_airports": [
+            "AGP"
+        ],
+        "name": "Parador De Malaga Gibralfaro",
+        "nights": 7,
+        "price_per_night": 100
+    },
+    {
+        "arrival_date": "2023-07-01",
+        "id": 12,
+        "local_airports": [
+            "AGP"
+        ],
+        "name": "MS Maestranza Hotel",
+        "nights": 14,
+        "price_per_night": 45
+    },
+    {
+        "arrival_date": "2023-06-15",
+        "id": 13,
+        "local_airports": [
+            "PMI"
+        ],
+        "name": "Jumeirah Port Soller",
+        "nights": 10,
+        "price_per_night": 295
+    }
+]

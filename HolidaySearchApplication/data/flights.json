@@ -1,0 +1,98 @@
+[
+    {
+        "airline": "First Class Air",
+        "departure_date": "2023-07-01",
+        "from": "MAN",
+        "id": 1,
+        "price": 470,
+        "to": "TFS"
+    },
+    {
+        "airline": "Oceanic Airlines",
+        "departure_date": "2023-07-01",
+        "from": "MAN",
+        "id": 2,
+        "price": 245,
+        "to": "AGP"
+    },
+    {
+        "airline": "Trans American Airlines",
+        "departure_date": "2023-06-15",
+        "from": "MAN",
+        "id": 3,
+        "price": 170,
+        "to": "PMI"
+    },
+    {
+        "airline": "Trans American Airlines",
+        "departure_date": "2023-06-15",
+        "from": "LTN",
+        "id": 4,
+        "price": 153,
+        "to": "PMI"
+    },
+    {
+        "airline": "Fresh Airways",
+        "departure_date": "2023-06-15",
+        "from": "MAN",
+        "id": 5,
+        "price": 130,
+        "to": "PMI"
+    },
+    {
+        "airline": "Fresh Airways",
+        "departure_date": "2023-06-15",
+        "from": "LGW",
+        "id": 6,
+        "price": 75,
+        "to": "PMI"
+    },
+    {
+        "airline": "Trans American Airlines",
+        "departure_date": "2022-11-10",
+        "from": "MAN",
+        "id": 7,
+        "price": 125,
+        "to": "LPA"
+    },
+    {
+        "airline": "Fresh Airways",
+        "departure_date": "2023-11-10",
+        "from": "MAN",
+        "id": 8,
+        "price": 175,
+        "to": "LPA"
+    },
+    {
+        "airline": "Fresh Airways",
+        "departure_date": "2023-04-11",
+        "from": "MAN",
+        "id": 9,
+        "price": 140,
+        "to": "AGP"
+    },
+    {
+        "airline": "First Class Air",
+        "departure_date": "2023-07-01",
+        "from": "LGW",
+        "id": 10,
+        "price": 225,
+        "to": "AGP"
+    },
+    {
+        "airline": "First Class Air",
+        "departure_date": "2023-07-01",
+        "from": "LGW",
+        "id": 11,
+        "price": 155,
+        "to": "AGP"
+    },
+    {
+        "airline": "Trans American Airlines",
+        "departure_date": "2023-10-25",
+        "from": "MAN",
+        "id": 12,
+        "price": 202,
+        "to": "AGP"
+    }
+]

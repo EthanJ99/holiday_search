@@ -10,8 +10,13 @@ public class Flight
     public string departure_date { get; set; }
 
     public override string ToString(){
-        return "id: " + id + " airline: " + airline + " from: " + from + " to:" + to + " price:" + price + " departure_date:" + departure_date;
-    }  
+        return $"Flight ID: {id}\n" +
+            $"Airline: {airline}\n" +
+            $"From: {from}\n" +
+            $"To: {to}\n" +
+            $"Price: {price}\n" +
+            $"Departure Date: {departure_date}";
+    }
 }
 
 public class Hotel
@@ -24,12 +29,12 @@ public class Hotel
     public int nights { get; set; }
 
     public override string ToString(){
-        string output_str = "id: " + id + " name: " + name + " arrival_date: " + arrival_date + " price_per_night" + price_per_night + " nights" + nights;
-        for (int i = 0; i < local_airports.Count; i++)
-        {
-            output_str = output_str + " " + i;
-        }
-        return output_str;
+        return $"Hotel ID: {id}\n" +
+               $"Name: {name}\n" +
+               $"Arrival Date: {arrival_date}\n" +
+               $"Price per Night: {price_per_night}\n" +
+               $"Nights: {nights}\n" +
+               $"Local Airports: {string.Join(", ", local_airports)}";
     } 
 }
 
@@ -37,6 +42,12 @@ public class Holiday {
     public float total_price { get; set; }
     public Hotel hotel { get; set; }
     public Flight flight { get; set; }
+
+    public override string ToString(){
+        return $"[Total Price]: {total_price}\n\n" +
+               $"[Hotel Details]:\n{hotel}\n\n" +
+               $"[Flight Details]:\n{flight}";
+    }
 }
 
 public class UserSearch {
