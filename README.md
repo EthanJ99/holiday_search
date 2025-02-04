@@ -1,6 +1,9 @@
 # Holiday Search Program
 A program which searches a database of available flights and hotels and returns the best value holiday based on user input.
 
+## Screenshot
+![alt text](screenshot.png)
+
 ## File Structure
 - Main function is within `/HolidaySearchApplication/HolidaySearchApplication.cs`
   - Hotel and Flight JSON data is stored within the `/data` subfolder here

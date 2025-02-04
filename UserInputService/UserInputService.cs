@@ -15,7 +15,7 @@ public class UserInputService
             Console.Write("Enter destination: ");
             user_search.to = Console.ReadLine();
 
-            Console.Write("Enter date (in format e.g. YYYY-MM-DD e.g. 2025-02-04): ");
+            Console.Write("Enter date (YYYY-MM-DD): ");
             user_search.date = Console.ReadLine();
 
             Console.Write("Enter duration (in days): ");
