@@ -398,3 +398,9 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+# Misc
+*.project.assets.json
+*.project.nuget.cache
+HolidaySearch/obj/project.assets.json
+HolidaySearch/obj/project.nuget.cache
