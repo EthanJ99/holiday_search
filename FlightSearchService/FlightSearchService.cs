@@ -4,17 +4,17 @@ using DataReadService;
 
 public class FlightSearchService
 {
-    List<Flight> flight_data;
-    string destination;
-    string origin;
-    string date;
+    List<Flight> flight_data {get; set;}
+    string destination {get;}
+    string origin {get;}
+    string date {get;}
     public FlightSearchService(List<Flight> flight_data, UserSearch user_search){
         this.flight_data = flight_data;
         this.destination = user_search.to;
         this.origin = user_search.from;
         this.date = user_search.date;
     }
-    private List<Flight> Filter(){
+    public List<Flight> Filter(){
         /*
         Returns a list of Flights meeting the input criteria.
         Inputs:
@@ -23,12 +23,13 @@ public class FlightSearchService
             - date: date customer intends to leave on holiday
         Output: List of flight data (of type Flight)
         */
-        return [.. flight_data.Where(x => 
+        this.flight_data = [.. flight_data.Where(x => 
             x.to == this.destination && 
             x.from == this.origin && 
             x.departure_date == this.date
             )
         ];
+        return this.flight_data;
     }
 
     public Flight FindCheapestFlight(){
@@ -39,9 +40,9 @@ public class FlightSearchService
         this method will just return the first (based on their order in the list). A more sophisticated
         search could allow user to choose between the different options
         */
-        var filtered_search = this.Filter();
-        if (filtered_search.Count() > 0) {
-            return filtered_search.OrderBy(x => x.price).First();
+        // var filtered_search = this.Filter();
+        if (flight_data.Count() > 0) {
+            return flight_data.OrderBy(x => x.price).First();
         }
         throw new ArgumentException("Flight data must not be empty.");
     }
