@@ -7,4 +7,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\DataReadService\DataReadService.csproj" />
+    <ProjectReference Include="..\FlightSearchService\FlightSearchService.csproj" />
+    <ProjectReference Include="..\HotelSearchService\HotelSearchService.csproj" />
+  </ItemGroup>
+
 </Project>
