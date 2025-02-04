@@ -1,8 +1,10 @@
 ﻿namespace HolidaySearch.Tests;
+
 using HolidaySearchService;
 using DataReadService;
+using DataStructures.Models;
+
 using Xunit;
-using Xunit.Abstractions;
 
 public class HolidaySearchServiceTests
 {

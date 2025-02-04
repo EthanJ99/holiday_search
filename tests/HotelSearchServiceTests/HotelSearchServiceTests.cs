@@ -1,5 +1,5 @@
 ﻿namespace HotelSearchService.Tests;
-using DataReadService;
+using DataStructures.Models;
 
 public class HotelSearchServiceTests
 {

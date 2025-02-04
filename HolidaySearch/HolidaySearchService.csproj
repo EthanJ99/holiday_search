@@ -11,6 +11,7 @@
     <ProjectReference Include="..\DataReadService\DataReadService.csproj" />
     <ProjectReference Include="..\FlightSearchService\FlightSearchService.csproj" />
     <ProjectReference Include="..\HotelSearchService\HotelSearchService.csproj" />
+    <ProjectReference Include="..\models\DataStructures.Models\DataStructures.Models.csproj" />
   </ItemGroup>
 
 </Project>

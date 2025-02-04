@@ -1,16 +1,13 @@
 ﻿namespace HolidaySearchService;
 
 using System.Collections.Generic;
-using System.Linq;
-using System;
-using DataReadService;
 using FlightSearchService;
 using HotelSearchService;
-using System.Diagnostics;
+using DataStructures.Models;
 
 public class HolidaySearchService {
-    private List<Flight> flight_data;
-    private List<Hotel> hotel_data;
+    List<Flight> flight_data;
+    List<Hotel> hotel_data;
     UserSearch user_search;
 
     public HolidaySearchService(List<Flight> flight_data, List<Hotel> hotel_data, UserSearch user_search){
@@ -20,9 +17,6 @@ public class HolidaySearchService {
     }
     
     public Holiday FindCheapestHoliday(){
-        // Get user input (done in test)
-        // Read Data (done in test)
-    
         // Search Flights using user criteria
         FlightSearchService flight_service = new FlightSearchService(
             flight_data: this.flight_data,

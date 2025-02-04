@@ -1,6 +1,6 @@
 ﻿namespace FlightSearchService.Tests;
 
-using DataReadService;
+using DataStructures.Models;
 using Xunit;
 
 public class FlightSearchServiceTests

@@ -1,6 +1,4 @@
-using System;
-
-namespace DataReadService;
+namespace DataStructures.Models;
 
 public class Flight
 {

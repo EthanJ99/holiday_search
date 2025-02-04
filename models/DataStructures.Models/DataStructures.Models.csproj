@@ -6,9 +6,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\DataReadService\DataReadService.csproj" />
-    <ProjectReference Include="..\models\DataStructures.Models\DataStructures.Models.csproj" />
-  </ItemGroup>
-
 </Project>

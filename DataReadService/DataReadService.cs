@@ -1,4 +1,5 @@
 ﻿using System.Text.Json;
+using DataStructures.Models;
 namespace DataReadService;
 
 public class ReadFlightData : IReadData<Flight>

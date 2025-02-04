@@ -1,6 +1,6 @@
 ﻿namespace FlightSearchService;
 
-using DataReadService;
+using DataStructures.Models;
 
 public class FlightSearchService
 {
@@ -8,12 +8,14 @@ public class FlightSearchService
     string destination {get;}
     string origin {get;}
     string date {get;}
+
     public FlightSearchService(List<Flight> flight_data, UserSearch user_search){
         this.flight_data = flight_data;
         this.destination = user_search.to;
         this.origin = user_search.from;
         this.date = user_search.date;
     }
+
     public List<Flight> Filter(){
         /*
         Returns a list of Flights meeting the input criteria.
