@@ -25,18 +25,14 @@ public class HolidaySearchService {
     
         // Search Flights using user criteria
         FlightSearchService flight_service = new FlightSearchService(
-            flight_data: this.flight_data
-        );
-
-        var filtered_flights = flight_service.FlightSearch(
-            from: this.user_search.from,
-            to: this.user_search.to,
-            date: this.user_search.date
+            flight_data: this.flight_data,
+            user_search: this.user_search
         );
 
         // Search Hotels using user criteria
         HotelSearchService hotel_service = new HotelSearchService(
             hotel_data: this.hotel_data
+            //user_search: this.user_search
         );
 
         var filtered_hotels = hotel_service.HotelSearch(
@@ -44,8 +40,12 @@ public class HolidaySearchService {
             date: this.user_search.date
         );
 
+        // Filter results based on user search
+        flight_service.Filter();
+        // hotel_service.Filter();
+
         // Check cheapest flight & hotel
-        Flight cheapest_flight = flight_service.FindCheapestFlight(filtered_flights);
+        Flight cheapest_flight = flight_service.FindCheapestFlight();
         Hotel cheapest_hotel = hotel_service.FindCheapestHotel(hotels: filtered_hotels, nights: user_search.duration);
 
         // Return final selection
