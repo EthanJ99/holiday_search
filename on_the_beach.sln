@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HolidaySearchApplication", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserInputService", "UserInputService\UserInputService.csproj", "{E4B18B61-4EBE-4D2E-AFC2-AD910FBE3018}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exceptions.Models", "models\Exceptions.Models\Exceptions.Models.csproj", "{8F6B54F6-1B13-480F-B60E-A12E430C7DB6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -79,6 +81,10 @@ Global
 		{E4B18B61-4EBE-4D2E-AFC2-AD910FBE3018}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E4B18B61-4EBE-4D2E-AFC2-AD910FBE3018}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E4B18B61-4EBE-4D2E-AFC2-AD910FBE3018}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F6B54F6-1B13-480F-B60E-A12E430C7DB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F6B54F6-1B13-480F-B60E-A12E430C7DB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F6B54F6-1B13-480F-B60E-A12E430C7DB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F6B54F6-1B13-480F-B60E-A12E430C7DB6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -89,5 +95,6 @@ Global
 		{669AF9EF-1B51-420C-B0FF-4101EFDB150A} = {0AB3BF05-4346-4AA6-1389-037BE0695223}
 		{2486234E-5C81-4A16-881B-3D2DE5FB0281} = {0AB3BF05-4346-4AA6-1389-037BE0695223}
 		{5E54D3C7-63AC-4E39-8A72-3C953FF9BC22} = {7E5E3D99-03B0-3438-6A3D-D9E8D97DA366}
+		{8F6B54F6-1B13-480F-B60E-A12E430C7DB6} = {7E5E3D99-03B0-3438-6A3D-D9E8D97DA366}
 	EndGlobalSection
 EndGlobal

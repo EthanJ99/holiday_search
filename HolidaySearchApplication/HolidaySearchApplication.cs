@@ -2,6 +2,7 @@
 using HolidaySearch.DataReadService;
 using HolidaySearch.DataStructures.Models;
 using HolidaySearch.UserInputService;
+using HolidaySearch.Exceptions;
 
 class HolidaySearchApplication
 {
@@ -26,9 +27,8 @@ class HolidaySearchApplication
             Holiday result = holiday_service.FindCheapestHoliday();
             Console.WriteLine(result);
         }
-        catch (Exception e) {
-            Console.WriteLine($"Error: {e}");
-            throw;
+        catch (MissingDataException) {
+            Console.WriteLine($"No suitable holiday found.");
         }
         
     }

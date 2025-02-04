@@ -12,6 +12,7 @@
     <ProjectReference Include="..\FlightSearchService\FlightSearchService.csproj" />
     <ProjectReference Include="..\HotelSearchService\HotelSearchService.csproj" />
     <ProjectReference Include="..\models\DataStructures.Models\DataStructures.Models.csproj" />
+    <ProjectReference Include="..\models\Exceptions.Models\Exceptions.Models.csproj" />
   </ItemGroup>
 
 </Project>

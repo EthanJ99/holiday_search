@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using HolidaySearch.FlightSearchService;
 using HolidaySearch.HotelSearchService;
 using HolidaySearch.DataStructures.Models;
+using HolidaySearch.Exceptions;
 
 public class HolidaySearchService {
     List<Flight> flight_data;
@@ -33,16 +34,20 @@ public class HolidaySearchService {
         flight_service.Filter();
         hotel_service.Filter();
 
-        // Check cheapest flight & hotel
-        Flight cheapest_flight = flight_service.FindCheapestFlight();
-        Hotel cheapest_hotel = hotel_service.FindCheapestHotel();
+        try {
+            // Check cheapest flight & hotel
+            Flight cheapest_flight = flight_service.FindCheapestFlight();
+            Hotel cheapest_hotel = hotel_service.FindCheapestHotel();
 
-        // Return final selection
-        float total_price = cheapest_flight.price + (cheapest_hotel.price_per_night * cheapest_hotel.nights);
-        return new Holiday {
-            flight = cheapest_flight,
-            hotel = cheapest_hotel,
-            total_price = total_price
-        };
+            // Return final selection
+            float total_price = cheapest_flight.price + (cheapest_hotel.price_per_night * cheapest_hotel.nights);
+            return new Holiday {
+                flight = cheapest_flight,
+                hotel = cheapest_hotel,
+                total_price = total_price
+            };
+        } catch(Exception) {
+            throw new MissingDataException();
+        }
     }
 }

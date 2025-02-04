@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\HolidaySearchService\HolidaySearchService.csproj" />
+    <ProjectReference Include="..\models\Exceptions.Models\Exceptions.Models.csproj" />
     <ProjectReference Include="..\UserInputService\UserInputService.csproj" />
   </ItemGroup>
 
