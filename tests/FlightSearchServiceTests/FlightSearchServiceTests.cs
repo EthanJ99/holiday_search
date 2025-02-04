@@ -1,6 +1,6 @@
-﻿namespace FlightSearchService.Tests;
+﻿namespace HolidaySearch.FlightSearchService.Tests;
 
-using DataStructures.Models;
+using HolidaySearch.DataStructures.Models;
 using Xunit;
 
 public class FlightSearchServiceTests

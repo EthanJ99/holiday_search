@@ -1,4 +1,4 @@
-namespace DataStructures.Models;
+namespace HolidaySearch.DataStructures.Models;
 
 public class Flight
 {

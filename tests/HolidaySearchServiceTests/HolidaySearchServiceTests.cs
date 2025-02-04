@@ -1,8 +1,8 @@
 ﻿namespace HolidaySearch.Tests;
 
-using HolidaySearchService;
-using DataReadService;
-using DataStructures.Models;
+using HolidaySearch.HolidaySearchService;
+using HolidaySearch.DataReadService;
+using HolidaySearch.DataStructures.Models;
 
 using Xunit;
 

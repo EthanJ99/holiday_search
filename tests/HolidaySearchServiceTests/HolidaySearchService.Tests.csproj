@@ -16,7 +16,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\DataReadService\DataReadService.csproj" />
-    <ProjectReference Include="..\..\HolidaySearch\HolidaySearchService.csproj" />
+    <ProjectReference Include="..\..\HolidaySearchService\HolidaySearchService.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -1,5 +1,5 @@
-﻿namespace HotelSearchService;
-using DataStructures.Models;
+﻿namespace HolidaySearch.HotelSearchService;
+using HolidaySearch.DataStructures.Models;
 
 public class HotelSearchService
 {

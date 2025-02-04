@@ -1,4 +1,4 @@
-﻿namespace HotelSearchService.Tests;
+﻿namespace HolidaySearch.HotelSearchService.Tests;
 using DataStructures.Models;
 
 public class HotelSearchServiceTests

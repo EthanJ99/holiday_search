@@ -1,6 +1,6 @@
 using System;
 
-namespace DataReadService;
+namespace HolidaySearch.DataReadService;
 
 public interface IReadData<T>
 {

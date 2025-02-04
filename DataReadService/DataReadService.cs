@@ -1,6 +1,6 @@
 ﻿using System.Text.Json;
-using DataStructures.Models;
-namespace DataReadService;
+using HolidaySearch.DataStructures.Models;
+namespace HolidaySearch.DataReadService;
 
 public class ReadFlightData : IReadData<Flight>
 {

@@ -1,6 +1,6 @@
-﻿namespace FlightSearchService;
+﻿namespace HolidaySearch.FlightSearchService;
 
-using DataStructures.Models;
+using HolidaySearch.DataStructures.Models;
 
 public class FlightSearchService
 {

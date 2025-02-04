@@ -1,9 +1,9 @@
-﻿namespace HolidaySearchService;
+﻿namespace HolidaySearch.HolidaySearchService;
 
 using System.Collections.Generic;
-using FlightSearchService;
-using HotelSearchService;
-using DataStructures.Models;
+using HolidaySearch.FlightSearchService;
+using HolidaySearch.HotelSearchService;
+using HolidaySearch.DataStructures.Models;
 
 public class HolidaySearchService {
     List<Flight> flight_data;

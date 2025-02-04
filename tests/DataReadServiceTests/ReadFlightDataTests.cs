@@ -1,7 +1,7 @@
 using System.Text.Json;
-using DataStructures.Models;
+using HolidaySearch.DataStructures.Models;
 
-namespace DataReadService.Tests;
+namespace HolidaySearch.DataReadService.Tests;
 
 public class ReadFlightDataTests
 {
