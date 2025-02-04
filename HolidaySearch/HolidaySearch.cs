@@ -31,22 +31,17 @@ public class HolidaySearchService {
 
         // Search Hotels using user criteria
         HotelSearchService hotel_service = new HotelSearchService(
-            hotel_data: this.hotel_data
-            //user_search: this.user_search
-        );
-
-        var filtered_hotels = hotel_service.HotelSearch(
-            to: this.user_search.to,
-            date: this.user_search.date
+            hotel_data: this.hotel_data,
+            user_search: this.user_search
         );
 
         // Filter results based on user search
         flight_service.Filter();
-        // hotel_service.Filter();
+        hotel_service.Filter();
 
         // Check cheapest flight & hotel
         Flight cheapest_flight = flight_service.FindCheapestFlight();
-        Hotel cheapest_hotel = hotel_service.FindCheapestHotel(hotels: filtered_hotels, nights: user_search.duration);
+        Hotel cheapest_hotel = hotel_service.FindCheapestHotel();
 
         // Return final selection
         float total_price = cheapest_flight.price + (cheapest_hotel.price_per_night * cheapest_hotel.nights);

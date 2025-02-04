@@ -23,7 +23,7 @@ public class HotelSearchService
             - date: date customer intends to leave on holiday
         Output: List of hotel data (of type Hotel)
         */
-        this.hotel_data = [.. hotel_data.Where(x => x.local_airports.Contains(this.to) && x.arrival_date == this.date)];
+        this.hotel_data = [.. hotel_data.Where(x => x.local_airports.Contains(this.to) && x.arrival_date == this.date && x.nights == this.nights)];
         return this.hotel_data;
     }
 
