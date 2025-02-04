@@ -1,11 +1,21 @@
 ﻿namespace HolidaySearch.Tests;
+using HolidaySearchService;
+using DataReadService;
+using Xunit;
+using Xunit.Abstractions;
 
-public class UnitTest1
+public class HolidaySearchServiceTests
 {
     [Fact]
-    public void Test1()
+    public void HolidaySearchTest_ValidUserInput_FindsCheapestHoliday()
     {
-        var holiday_search = new HolidaySearch();
-        Assert.True(holiday_search.give_one() == 1);
+        var flight_data = ReadFlightData.ReadData("../../../test_data/flights.json");
+        var hotel_data = ReadHotelData.ReadData("../../../test_data/hotels.json");
+        var user_search = new UserSearch{from = "MAN", to = "AGP", date = "2023-07-01", duration = 7};
+
+        var holiday_service = new HolidaySearchService(flight_data: flight_data, hotel_data: hotel_data, user_search: user_search);
+        Holiday result = holiday_service.FindCheapestHoliday();
+        Assert.Equal(expected: 2, actual: result.flight.id);
+        Assert.Equal(expected: 9, actual: result.hotel.id);
     }
 }

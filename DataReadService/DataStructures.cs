@@ -36,7 +36,14 @@ public class Hotel
 }
 
 public class Holiday {
-    public float total_price;
-    public Hotel hotel;
-    public Flight flight;
+    public float total_price { get; set; }
+    public Hotel hotel { get; set; }
+    public Flight flight { get; set; }
+}
+
+public class UserSearch {
+    public string from { get; set; }
+    public string to { get; set; }
+    public string date { get; set; }
+    public int duration { get; set; }
 }
