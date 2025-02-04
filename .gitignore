@@ -404,3 +404,4 @@ FodyWeavers.xsd
 *.project.nuget.cache
 HolidaySearch/obj/project.assets.json
 HolidaySearch/obj/project.nuget.cache
+.vscode/settings.json
