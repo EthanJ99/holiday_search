@@ -14,7 +14,7 @@ public class Flight
             $"Airline: {airline}\n" +
             $"From: {from}\n" +
             $"To: {to}\n" +
-            $"Price: {price}\n" +
+            $"Price: £{price}\n" +
             $"Departure Date: {departure_date}";
     }
 }
@@ -32,7 +32,7 @@ public class Hotel
         return $"Hotel ID: {id}\n" +
                $"Name: {name}\n" +
                $"Arrival Date: {arrival_date}\n" +
-               $"Price per Night: {price_per_night}\n" +
+               $"Price per Night: £{price_per_night}\n" +
                $"Nights: {nights}\n" +
                $"Local Airports: {string.Join(", ", local_airports)}";
     } 
@@ -44,7 +44,7 @@ public class Holiday {
     public Flight flight { get; set; }
 
     public override string ToString(){
-        return $"[Total Price]: {total_price}\n\n" +
+        return $"[Total Price]: £{total_price}\n\n" +
                $"[Hotel Details]:\n{hotel}\n\n" +
                $"[Flight Details]:\n{flight}";
     }
