@@ -1,4 +1,5 @@
 ﻿namespace FlightSearchService;
+
 using DataReadService;
 
 public class FlightSearchService
@@ -27,7 +28,7 @@ public class FlightSearchService
         this method will just return the first (based on their order in the list). A more sophisticated
         search could allow user to choose between the different options
         */
-        if (flights.Count > 0) {
+        if (flights.Count() > 0) {
             return flights.OrderBy(x => x.price).First();
         }
         throw new ArgumentException("Flight data must not be empty.");
